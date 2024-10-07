@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/mediaqueries.css" />
+    <link rel="stylesheet" href="assets/css/splide.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+    <script type="text/javascript" src="assets/js/lightmode.js" defer></script>
+    <script type="text/javascript" src="assets/js/typed.js" defer></script>
+    <script src="assets/js/splide.min.js" defer></script>
+    <script type="text/javascript" src="assets/js/script.js" defer></script>
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Nabil Muthi</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li>
+            <button id="theme-switch">
+              <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M484-77.72q-83.99 0-158.08-32.19-74.08-32.2-129.01-87.03-54.94-54.83-87.06-128.95Q77.72-400.01 77.72-484q0-125.28 69.94-227.8 69.95-102.53 187.06-149.13 24.96-10.87 47.44 3.54 22.47 14.41 22.67 40.93-.11 83.11 29.54 159.1t88.48 135.01q58.32 58.33 134.54 87.86t158.59 29.16q27.06.44 42.06 20.41 15 19.96 6.09 42.83-44.91 119.55-148.62 191.96Q611.81-77.72 484-77.72Zm0-86q85.2 0 157.96-42.39t116.52-116.11q-84.81-9.38-160.77-44.66-75.97-35.27-136.51-95.82-60.05-60.04-95.55-135.75-35.5-75.7-44.17-159.79-73.24 43.5-115.5 116.27Q163.72-569.2 163.72-484q0 133.65 93.31 226.97 93.32 93.31 226.97 93.31ZM461.2-462.7Z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M437-835.41v-41q0-17.66 12.67-30.33 12.68-12.67 30.33-12.67t30.33 12.67Q523-894.07 523-876.41v41q0 17.65-12.67 30.32-12.68 12.68-30.33 12.68t-30.33-12.68Q437-817.76 437-835.41Zm0 750.82v-41q0-17.65 12.67-30.32 12.68-12.68 30.33-12.68t30.33 12.68Q523-143.24 523-125.59v41q0 17.66-12.67 30.33Q497.65-41.59 480-41.59t-30.33-12.67Q437-66.93 437-84.59ZM875.91-437.5h-41q-17.65 0-30.32-12.67-12.68-12.68-12.68-30.33t12.68-30.33q12.67-12.67 30.32-12.67h41q17.66 0 30.33 12.67 12.67 12.68 12.67 30.33t-12.67 30.33q-12.67 12.67-30.33 12.67Zm-750.82 0h-41q-17.66 0-30.33-12.67-12.67-12.68-12.67-30.33t12.67-30.33q12.67-12.67 30.33-12.67h41q17.65 0 30.32 12.67 12.68 12.68 12.68 30.33t-12.68 30.33q-12.67 12.67-30.32 12.67Zm664.17-290.37-15.24 15q-12.91 12.17-30.31 12.17-17.41 0-30.58-13.17-12.67-12.67-12.8-30.08-.13-17.4 12.04-30.57l16-16q12.91-13.18 30.7-13.18 17.78 0 30.95 13.18 13.18 13.17 12.8 31.32-.39 18.16-13.56 31.33ZM247.63-186.48l-16 16q-12.91 13.18-30.7 13.18-17.78 0-30.95-13.18-13.18-13.17-12.8-31.32.39-18.16 13.56-31.33l15.24-15q12.91-12.17 30.31-12.17 17.41 0 30.58 13.17 12.67 12.67 12.8 30.08.13 17.4-12.04 30.57Zm479.74 15.24-15-15.24q-12.17-12.91-12.17-30.31 0-17.41 13.17-30.58 12.67-12.67 30.08-12.8 17.4-.13 30.57 12.04l16 16q13.18 12.91 13.18 30.7 0 17.78-13.18 30.95-13.17 13.18-31.32 12.8-18.16-.39-31.33-13.56ZM185.98-712.87l-16-16q-13.18-12.91-13.18-30.7 0-17.78 13.18-30.95 13.17-13.18 31.32-12.8 18.16.39 31.33 13.56l15 15.24q12.17 12.91 12.17 30.31 0 17.41-13.17 30.58-12.67 12.67-30.08 12.8-17.4.13-30.57-12.04ZM480-248q-97 0-164.75-67.75T247.5-480.5q0-97 67.75-164.75T480-713q97 0 164.75 67.75T712.5-480.5q0 97-67.75 164.75T480-248Zm0-86q60.96 0 103.73-42.77T626.5-480.5q0-60.96-42.77-103.73T480-627q-60.96 0-103.73 42.77T333.5-480.5q0 60.96 42.77 103.73T480-334Zm0-146.5Z"/></svg>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <button id="theme-switch">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M484-77.72q-83.99 0-158.08-32.19-74.08-32.2-129.01-87.03-54.94-54.83-87.06-128.95Q77.72-400.01 77.72-484q0-125.28 69.94-227.8 69.95-102.53 187.06-149.13 24.96-10.87 47.44 3.54 22.47 14.41 22.67 40.93-.11 83.11 29.54 159.1t88.48 135.01q58.32 58.33 134.54 87.86t158.59 29.16q27.06.44 42.06 20.41 15 19.96 6.09 42.83-44.91 119.55-148.62 191.96Q611.81-77.72 484-77.72Zm0-86q85.2 0 157.96-42.39t116.52-116.11q-84.81-9.38-160.77-44.66-75.97-35.27-136.51-95.82-60.05-60.04-95.55-135.75-35.5-75.7-44.17-159.79-73.24 43.5-115.5 116.27Q163.72-569.2 163.72-484q0 133.65 93.31 226.97 93.32 93.31 226.97 93.31ZM461.2-462.7Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M437-835.41v-41q0-17.66 12.67-30.33 12.68-12.67 30.33-12.67t30.33 12.67Q523-894.07 523-876.41v41q0 17.65-12.67 30.32-12.68 12.68-30.33 12.68t-30.33-12.68Q437-817.76 437-835.41Zm0 750.82v-41q0-17.65 12.67-30.32 12.68-12.68 30.33-12.68t30.33 12.68Q523-143.24 523-125.59v41q0 17.66-12.67 30.33Q497.65-41.59 480-41.59t-30.33-12.67Q437-66.93 437-84.59ZM875.91-437.5h-41q-17.65 0-30.32-12.67-12.68-12.68-12.68-30.33t12.68-30.33q12.67-12.67 30.32-12.67h41q17.66 0 30.33 12.67 12.67 12.68 12.67 30.33t-12.67 30.33q-12.67 12.67-30.33 12.67Zm-750.82 0h-41q-17.66 0-30.33-12.67-12.67-12.68-12.67-30.33t12.67-30.33q12.67-12.67 30.33-12.67h41q17.65 0 30.32 12.67 12.68 12.68 12.68 30.33t-12.68 30.33q-12.67 12.67-30.32 12.67Zm664.17-290.37-15.24 15q-12.91 12.17-30.31 12.17-17.41 0-30.58-13.17-12.67-12.67-12.8-30.08-.13-17.4 12.04-30.57l16-16q12.91-13.18 30.7-13.18 17.78 0 30.95 13.18 13.18 13.17 12.8 31.32-.39 18.16-13.56 31.33ZM247.63-186.48l-16 16q-12.91 13.18-30.7 13.18-17.78 0-30.95-13.18-13.18-13.17-12.8-31.32.39-18.16 13.56-31.33l15.24-15q12.91-12.17 30.31-12.17 17.41 0 30.58 13.17 12.67 12.67 12.8 30.08.13 17.4-12.04 30.57Zm479.74 15.24-15-15.24q-12.17-12.91-12.17-30.31 0-17.41 13.17-30.58 12.67-12.67 30.08-12.8 17.4-.13 30.57 12.04l16 16q13.18 12.91 13.18 30.7 0 17.78-13.18 30.95-13.17 13.18-31.32 12.8-18.16-.39-31.33-13.56ZM185.98-712.87l-16-16q-13.18-12.91-13.18-30.7 0-17.78 13.18-30.95 13.17-13.18 31.32-12.8 18.16.39 31.33 13.56l15 15.24q12.17 12.91 12.17 30.31 0 17.41-13.17 30.58-12.67 12.67-30.08 12.8-17.4.13-30.57-12.04ZM480-248q-97 0-164.75-67.75T247.5-480.5q0-97 67.75-164.75T480-713q97 0 164.75 67.75T712.5-480.5q0 97-67.75 164.75T480-248Zm0-86q60.96 0 103.73-42.77T626.5-480.5q0-60.96-42.77-103.73T480-627q-60.96 0-103.73 42.77T333.5-480.5q0 60.96 42.77 103.73T480-334Zm0-146.5Z"/></svg>
+      </button>
+      <div class="logo">Nabil Muthi</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/img/profil.jpg" alt="My profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Nabil Muthi</h1>
+        <p class="section__text__p2">Web Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/file/resume-cv.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <a href="https://www.github.com/nabilmuthi77" target="_blank" class="icon-text"><i class="fa fa-github" aria-hidden="true"></i></a>
+          <a href="https://www.linkedin.com/in/nabilmuthi77" target="_blank" class="icon-text"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </section>
+    
+    <section id="about">
+      <p class="section__text__p1">Get To Know More?</p>
+      <h1 class="title space">About Me</h1>
+      <div class="typed-profile">
+         <p class="typed-header">Hi, I am Nabil</p>
+        <p class="typed-loop space"><span id="typed"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+      </div>
+     
+        <div class="profile-card">
+          <div class="profile-info">
+            <p>I have a passion for web programming, so I am always self-taught and open to learn something to enhance my skills. I have developed many web-apps using PHP, CI Framework, Bootstrap CSS, Javascript etc.</p>
+            <img src="./assets/img/profile-pic.png" alt="Profile Picture" class="profile-image" />
+          </div>
+          <div class="social-media">
+            <p>Social Media</p>
+            <div class="social-icons">
+              <a href="https://www.linkedin.com/in/nabilmuthi77" target="_blank" class="icon-text"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+              <a href="https://api.whatsapp.com/send?phone=6282258941501" target="_blank" class="icon-text"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+              <a href="https://www.github.com/nabilmuthi77" target="_blank" class="icon-text"><i class="fa fa-github" aria-hidden="true"></i></a>
+              <a href="https://www.facebook.com/nabilmuthi77" target="_blank" class="icon-text"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+            </div>
+          </div>
+          </div>
+        </div>
+
+          <div class="edu-box">
+            <div class="edu-header">
+              <i class="fa fa-cogs" aria-hidden="true"></i> &nbsp;&nbsp;
+              <p>Education</p>
+            </div>
+            <div class="edu-detail">
+              <p>Associate Degree in Information Systems (D3)<br />Bachelor of Information Systems (S1)</p>
+            </div>            
+            </div>
+
+      <img
+      src="./assets/icon/arrow.png"
+      alt="Arrow icon"
+      class="icon arrow"
+      onclick="location.href='#experience'"
+    />
+  </section>
+
+  <section id="experience">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">Experience</h1>
+    <div class="experience-details">
+      <div class="experience-card">
+        <h2 class="experience-title">Frontend Development</h2>
+        <div class="experience-list">
+          <article class="experience-item">
+            <img src="./assets/icon/checkmark.png" alt="Experience icon" class="icon" />
+            <div>
+              <h3>HTML</h3>
+              <p>Experienced</p>
+            </div>
+          </article>
+          <article class="experience-item">
+            <img src="./assets/icon/checkmark.png" alt="Experience icon" class="icon" />
+            <div>
+              <h3>CSS</h3>
+              <p>Experienced</p>
+            </div>
+          </article>
+          <article class="experience-item">
+            <img src="./assets/icon/checkmark.png" alt="Experience icon" class="icon" />
+            <div>
+              <h3>JavaScript</h3>
+              <p>Basic</p>
+            </div>
+          </article>
+          <article class="experience-item">
+            <img src="./assets/icon/checkmark.png" alt="Experience icon" class="icon" />
+            <div>
+              <h3>Bootstrap</h3>
+              <p>Intermediate</p>
+            </div>
+          </article>
+          <article class="experience-item">
+            <img src="./assets/icon/checkmark.png" alt="Experience icon" class="icon" />
+            <div>
+              <h3>SplideJs</h3>
+              <p>Intermediate</p>
+            </div>
+          </article>
+          <article class="experience-item">
+            <img src="./assets/icon/checkmark.png" alt="Experience icon" class="icon" />
+            <div>
+              <h3>TypedJs</h3>
+              <p>Intermediate</p>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <div class="experience-card">
+        <h2 class="experience-title">Backend Development</h2>
+        <div class="experience-list">
+          <article class="experience-item">
+            <img src="./assets/icon/checkmark.png" alt="Experience icon" class="icon" />
+            <div>
+              <h3>MySQL</h3>
+              <p>Intermediate</p>
+            </div>
+          </article>
+          <article class="experience-item">
+            <img src="./assets/icon/checkmark.png" alt="Experience icon" class="icon" />
+            <div>
+              <h3>Laravel</h3>
+              <p>Basic</p>
+            </div>
+          </article>
+          <article class="experience-item">
+            <img src="./assets/icon/checkmark.png" alt="Experience icon" class="icon" />
+            <div>
+              <h3>Codeigniter</h3>
+              <p>Intermediate</p>
+            </div>
+          </article>
+          <article class="experience-item">
+            <img src="./assets/icon/checkmark.png" alt="Experience icon" class="icon" />
+            <div>
+              <h3>Git</h3>
+              <p>Intermediate</p>
+            </div>
+          </article>
+          <article class="experience-item">
+            <img src="./assets/icon/checkmark.png" alt="Experience icon" class="icon" />
+            <div>
+              <h3>PHP</h3>
+              <p>Intermediate</p>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <div class="experience-card card-center">
+        <h2 class="experience-title">Web & Mobile Designer</h2>
+        <div class="experience-list">
+          <article class="experience-item">
+            <img src="./assets/icon/checkmark.png" alt="Experience icon" class="icon" />
+            <div>
+              <h3>Figma</h3>
+              <p>Intermediate</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+
+
+    <img src="./assets/icon/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#projects'" />
+  </section>
+
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title space">Projects</h1>
+
+      <div class="splide-wrap">
+        <div id="main-slider" class="splide" role="group" aria-label="Splide Basic HTML Example">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide"><img src="assets/img/similu.png" alt="Image 1"></li>
+              <li class="splide__slide"><img src="assets/img/siskamling.png" alt="Image 2"></li>
+              <li class="splide__slide"><img src="assets/img/magicosmetic.png" alt="Image 3"></li>
+              <li class="splide__slide"><img src="assets/img/darknews.png" alt="Image 4"></li>
+              <li class="splide__slide"><img src="assets/img/music.png" alt="Image 5"></li>
+            </ul>
+          </div>
+        </div>
+    
+        <div id="project-info" class="info">detail info project on script.js</div>
+    
+        <div id="thumbnail-slider" class="splide" role="group" aria-label="Splide Thumbnail Slider">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide"><img src="assets/img/similu.png" alt="Thumbnail 1"></li>
+              <li class="splide__slide"><img src="assets/img/siskamling.png" alt="Thumbnail 2"></li>
+              <li class="splide__slide"><img src="assets/img/magicosmetic.png" alt="Thumbnail 3"></li>
+              <li class="splide__slide"><img src="assets/img/darknews.png" alt="Thumbnail 4"></li>
+              <li class="splide__slide"><img src="assets/img/music.png" alt="Thumbnail 5"></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <img
+        src="./assets/icon/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+        <div class="contact-info-container">
+          <p class="text-mail">
+              <a href="mailto:nabilmuthi77@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i> &nbsp; nabilmuthi77@gmail.com</a>
+            </p>
+        </div>
+    </section>
+
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 nabilmuthi77</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
