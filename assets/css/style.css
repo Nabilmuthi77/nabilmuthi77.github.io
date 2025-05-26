@@ -17,9 +17,9 @@ body {
   margin: 0;
   padding: 0;
 
-  user-select: none; 
-  -webkit-user-select: none; 
-  -moz-user-select: none; 
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
   -ms-user-select: none;
 }
 
@@ -356,14 +356,14 @@ section {
 }
 
 .space {
-margin-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .typed-profile {
   margin: 0 auto;
   width: 620px;
-  }
-  
+}
+
 .typed-header {
   font-size: 2rem;
   font-weight: lighter;
@@ -380,18 +380,31 @@ margin-bottom: 1.5rem;
 .typed-cursor {
   opacity: 1;
 }
+
 .typed-cursor.typed-cursor--blink {
   animation: typedjsBlink 0.7s infinite;
   -webkit-animation: typedjsBlink 0.7s infinite;
-          animation: typedjsBlink 0.7s infinite;
+  animation: typedjsBlink 0.7s infinite;
 }
+
 @keyframes typedjsBlink {
-  50% { opacity: 0.0; }
+  50% {
+    opacity: 0.0;
+  }
 }
+
 @-webkit-keyframes typedjsBlink {
-  0% { opacity: 1; }
-  50% { opacity: 0.0; }
-  100% { opacity: 1; }
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 .profile-card {
@@ -449,12 +462,14 @@ margin-bottom: 1.5rem;
   max-width: 400px;
   margin: 0 auto;
 }
+
 .edu-header {
   border-bottom: 1px solid var(--text-color1);
   display: flex;
   margin-bottom: 5px;
   color: var(--text-color1);
 }
+
 .edu-detail p {
   font-size: .8rem;
   margin-left: 4px;
@@ -574,23 +589,27 @@ article .icon {
 }
 
 .splide-wrap {
-  max-width: 620px ;
+  max-width: 620px;
   margin: 0 auto;
   padding: 4px;
   margin-bottom: 20px;
 }
+
 #main-slider .splide__slide {
   border-radius: 10px;
   border: 2px solid var(--text-color2);
 }
+
 #main-slider .splide__slide img {
   width: 100%;
   height: auto;
 }
+
 #thumbnail-slider .splide__slide {
   border-radius: 10px;
   border: 4px solid var(--bg-color2);
 }
+
 #thumbnail-slider .splide__slide img {
   width: 100px;
   height: auto;
@@ -607,35 +626,44 @@ article .icon {
   margin-bottom: 10px;
   font-size: 1rem;
 }
+
 .info p {
   margin: 0.5em 0;
 }
+
 .info p.header-project {
-font-size: 1.2rem;
-font-weight: 500;
-color: var(--text-color2);
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--text-color2);
 }
-.info p.header-project a{
+
+.info p.header-project a {
   text-decoration: none;
 }
+
 .info p.header-project a:hover {
   color: var(--bg-color4);
 }
+
 .info p.desc-project {
   font-size: 1.1rem;
   font-weight: 500;
 }
+
 .info p.detail-project {
   margin-bottom: 20px;
 }
+
 .info span {
   color: var(--text-color1);
 }
+
 .info a {
   color: var(--text-color2);
   font-weight: bolder;
   text-decoration: underline;
 }
+
 .info a:hover {
   text-decoration: none;
 }
@@ -665,10 +693,12 @@ color: var(--text-color2);
 .contact-info-container p {
   font-size: larger;
 }
+
 .contact-info-container .text-mail a:hover {
   text-decoration: none;
   color: var(--text-color2);
 }
+
 .contact-icon {
   cursor: default;
 }
@@ -686,4 +716,205 @@ footer {
 
 footer p {
   text-align: center;
+}
+
+
+/* MODAL SECTION */
+#openModalBtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+#openModalBtn img {
+  width: 60px;
+  transition: transform 0.2s;
+}
+
+#openModalBtn img:hover {
+  transform: scale(1.1);
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  animation: fadeIn 0.3s ease-out;
+}
+
+.modal-content {
+  background-color: var(--base-color);
+  margin: 5% auto;
+  padding: 0;
+  border-radius: 0 50px 0 0;
+  width: 90%;
+  max-width: 500px;
+  text-align: left;
+  animation: slideDown 0.3s ease-out;
+  max-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  outline: 2px solid var(--bg-color2);
+}
+
+.modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 20px 10px 20px;
+  border-bottom: 1px solid var(--bg-color2);
+  background: var(--base-color);
+  border-radius: 50px 50px 0 0;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+.modal-header h2 {
+  margin: 0;
+  font-size: 1.3rem;
+  color: var(--text-color1);
+}
+
+.modal-body {
+  padding: 10px 20px 20px 20px;
+  overflow-y: auto;
+  flex: 1 1 auto;
+  max-height: 80vh;
+}
+
+.close {
+  color: var(--text-color2);
+  font-size: 26px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 15px;
+  background-color: var(--bg-color1);
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.boxModal {
+  background-color: var(--bg-color2);
+  padding: 2px 15px;
+  border-radius: 15px;
+}
+
+.exceptBox {
+  margin-bottom: 8px;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 5px;
+  margin-top: 5px;
+}
+
+.boxKalkulasi {
+  margin-top: 15px;
+  background-color: var(--bg-color2);
+  border-radius: 15px;
+}
+
+.buttonModal {
+  width: 100%;
+  height: 40px;
+  background-color: var(--bg-color1);
+  border: 2px solid var(--bg-color2);
+  border-radius: 10px;
+  color: var(--text-color1);
+  font-size: 16px;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+#hasil {
+  margin-top: 5px;
+  font-weight: bold;
+  font-size: 10px;
+  color: var(--text-color1);
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+
+/* Styling khusus input dan select di dalam modal */
+#modal input[type="number"],
+#modal select {
+  width: 100%;
+  padding: 10px 20px;
+  border-radius: 50px;
+  border: 1px solid var(--bg-color1);
+  margin-bottom: 15px;
+  font-size: 1rem;
+  box-sizing: border-box;
+  outline: none;
+  transition: border-color 0.2s;
+  background: var(--bg-color1);
+  color: var(--text-color1);
+}
+
+#modal input[type="number"]:focus,
+#modal select:focus {
+  border-color: var(--bg-color2);
+  color: var(--text-color2);
+}
+
+
+/* Hilangkan arrow default pada select di dalam modal */
+#modal select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: var(--bg-color1);
+  /* tetap pakai background yang sudah ada */
+  position: relative;
+  /* Tambahkan padding kanan agar ruang untuk custom arrow */
+  padding-right: 2.5em;
+}
+
+/* Custom arrow pakai pseudo-element pada wrapper */
+.select-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.select-wrapper select {
+  width: 100%;
+}
+
+.select-wrapper::after {
+  content: "▼";
+  position: absolute;
+  right: 1.5em;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: var(--text-color4);
+  font-size: 1em;
+}
+
+/* Hilangkan spinner (arrow) di input[type="number"] untuk Chrome, Safari, Edge */
+#modal input[type="number"]::-webkit-inner-spin-button,
+#modal input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
