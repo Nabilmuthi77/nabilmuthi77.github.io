@@ -64,11 +64,24 @@ document.addEventListener('DOMContentLoaded', function () {
   mainSlider.sync(thumbnailSlider);
 
   // Array untuk menyimpan detail info
-  var projectDetails = [
+  var projectDetails = [    
     `<div>
-      <p class="header-project"><a href="https://similu.raihanprojects.my.id/" target="_blank">E-Voting Website</a></p>
+      <p class="header-project"><a href="https://github.com/Nabilmuthi77/wallpaper-card.git" target="_blank">Wallpaper-Card Genshin</a></p>
       <p class="desc-project">Description</p>
-      <p class="detail-project">This website has function to facilitate the public in the selection and calculation of votes.</p>
+      <p class="detail-project">This Website has function to collect the genshin wallpaper card to keep and save on the gallery with online-based with clear of UI/UX appereance which is built with Laravel API and ReactJS while visualization using Tailwind</p>
+      <svg class="mr-1.5 mt-[2px] inline-flex sm:w-5 sm:h-5 sm:mt-[1px]" width="14" height="14" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M16 19C17.6569 19 19 17.6569 19 16C19 14.3431 17.6569 13 16 13C14.3431 13 13 14.3431 13 16C13 17.6569 14.3431 19 16 19Z" stroke="#34D39A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+      <path d="M4 7C5.65685 7 7 5.65685 7 4C7 2.34315 5.65685 1 4 1C2.34315 1 1 2.34315 1 4C1 5.65685 2.34315 7 4 7Z" stroke="#34D39A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+      <path d="M11 4H14C14.5304 4 15.0391 4.21071 15.4142 4.58579C15.7893 4.96086 16 5.46957 16 6V13" stroke="#34D39A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+      <path d="M4 7V19" stroke="#34D39A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+      </svg>
+        <span>&nbsp; This project develop with</span>
+        <a href="https://github.com/ican302" target="_blank">Ichsan Maulana</a><span>,</span>
+    </div>`,
+    `<div>
+      <p class="header-project"><a href="https://github.com/TIM-SUKSES/similu.git" target="_blank">E-Voting Website</a></p>
+      <p class="desc-project">Description</p>
+      <p class="detail-project">This website has function to facilitate the public in the selection and calculation of votes which is built with Codeigniter while visualization using Bootstrap</p>
       <svg class="mr-1.5 mt-[2px] inline-flex sm:w-5 sm:h-5 sm:mt-[1px]" width="14" height="14" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M16 19C17.6569 19 19 17.6569 19 16C19 14.3431 17.6569 13 16 13C14.3431 13 13 14.3431 13 16C13 17.6569 14.3431 19 16 19Z" stroke="#34D39A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
       <path d="M4 7C5.65685 7 7 5.65685 7 4C7 2.34315 5.65685 1 4 1C2.34315 1 1 2.34315 1 4C1 5.65685 2.34315 7 4 7Z" stroke="#34D39A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -82,9 +95,9 @@ document.addEventListener('DOMContentLoaded', function () {
         <a href="https://www.instagram.com/fdlyfat/" target="_blank">Fadly</a>
     </div>`,
     `<div>
-      <p class="header-project"><a href="http://siskamling.website/" target="_blank">Siskamling Website</a></p>
+      <p class="header-project"><a href="https://github.com/TIM-SUKSES/siskamling.git" target="_blank">Siskamling Website</a></p>
       <p class="desc-project">Description</p>
-      <p class="detail-project">This website is used to facilitate the public for viewing the security schedule and manage a village.</p>
+      <p class="detail-project">This website is used to facilitate the public for viewing the security schedule and manage a village which is built with Codeigniter while visualization using Bootstrap and focus to web security.</p>
       <svg class="mr-1.5 mt-[2px] inline-flex sm:w-5 sm:h-5 sm:mt-[1px]" width="14" height="14" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M16 19C17.6569 19 19 17.6569 19 16C19 14.3431 17.6569 13 16 13C14.3431 13 13 14.3431 13 16C13 17.6569 14.3431 19 16 19Z" stroke="#34D39A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
       <path d="M4 7C5.65685 7 7 5.65685 7 4C7 2.34315 5.65685 1 4 1C2.34315 1 1 2.34315 1 4C1 5.65685 2.34315 7 4 7Z" stroke="#34D39A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -101,11 +114,6 @@ document.addEventListener('DOMContentLoaded', function () {
       <p class="header-project"><a href="https://nabilmuthi77.github.io/magicosmetic.github.io/" target="_blank">Magicosmetic Website</a></p>
       <p class="desc-project">Description</p>
       <p class="detail-project">This website is created for a cosmetic company profile for showing to public and get many clients of it.</p>
-    </div>`,
-    `<div>
-      <p class="header-project"><a href="https://www.figma.com/design/ckdsluiXwPxVO1S3X5XGZI/Untitled?node-id=0-1&t=5ysQf99XSZ4JS8Sw-1" target="_blank">Dark News Web Desaign</a></p>
-      <p class="desc-project">Description</p>
-      <p class="detail-project">The desaign is used to read some populars news and articles which has contain a dark news and article (crime and others).</p>
     </div>`,
     `<div>
       <p class="header-project"><a href="https://www.figma.com/design/Lio4CWJoJYLnehTfUCdoj4/Untitled?t=5ysQf99XSZ4JS8Sw-1" target="_blank">Music App Desaign</a></p>
